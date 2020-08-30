@@ -1,0 +1,41 @@
+{
+  "name": "web",
+  "version": "1.0.0",
+  "description": "pages web",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MAYKOL-SL/MAYKOL-SL.github.io.git"
+  },
+  "author": "MAYKOL",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MAYKOL-SL/MAYKOL-SL.github.io/issues"
+  },
+  "homepage": "https://github.com/MAYKOL-SL/MAYKOL-SL.github.io#readme",
+  "devDependencies": {
+    "lodash.template": ">=4.5.0",
+    "gulp": "^4.0.2",
+    "eslint": "^7.1.0"
+  },
+  "dependencies": {
+    "browser-sync": "^2.26.7",
+    "del": "^5.1.0",
+    "gulp-autoprefixer": "*",
+    "gulp-clean-css": "*",
+    "gulp-combine-mq": "*",
+    "gulp-concat": "*",
+    "gulp-html-tag-include": "^1.0.1",
+    "gulp-notify": "*",
+    "gulp-plumber": "*",
+    "gulp-rename": "*",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "*",
+    "gulp-uglify-es": "^2.0.0",
+    "gulp-zip": "*",
+    "run-sequence": "*"
+  }
+}
