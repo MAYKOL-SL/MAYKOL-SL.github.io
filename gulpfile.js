@@ -7,7 +7,9 @@ const concat = require('gulp-concat');
 const config = require('./config.json');
 const del = require('del');
 const gulp = require('gulp');
-const htmlInclude = require('gulp-html-tag-include');
+// const htmlInclude = require('gulp-html-tag-include');
+const htmlPartial = require('gulp-html-partial');
+const rename = require('gulp-rename');
 const notify = require('gulp-notify');
 const plumber = require('gulp-plumber');
 const sass = require('gulp-sass');
@@ -50,15 +52,59 @@ gulp.task('css-dist', done => {
 });
 
 
+// gulp.task('html', done => {
+//   gulp.src(config.html.src).pipe(htmlInclude()).pipe(gulp.dest(config.html.dest));
+//   done();
+// });
+
 gulp.task('html', done => {
-  gulp.src(config.html.src).pipe(htmlInclude()).pipe(gulp.dest(config.html.dest));
+  gulp
+    .src(config.html_partials.src)
+    .pipe(
+      htmlPartial({
+        basePath: config.html_partials.base,
+      })
+    )
+    .pipe(
+      rename(function(file) {
+        if (file.basename !== 'index') {
+          file.dirname = file.basename;
+          file.basename = 'index';
+          file.extname = '.html';
+        }
+      })
+    )
+    .pipe(gulp.dest(config.html.dest));
   done();
 });
 
+
+// gulp.task('html-dist', done => {
+//   gulp.src(config.html.src).pipe(htmlInclude()).pipe(gulp.dest(config.html.dist));
+//   done();
+// });
+
 gulp.task('html-dist', done => {
-  gulp.src(config.html.src).pipe(htmlInclude()).pipe(gulp.dest(config.html.dist));
+  gulp
+    .src(config.html_partials.src)
+    .pipe(
+      htmlPartial({
+        basePath: config.html_partials.base,
+      })
+    )
+    .pipe(
+      rename(function(file) {
+        if (file.basename !== 'index') {
+          file.dirname = file.basename;
+          file.basename = 'index';
+          file.extname = '.html';
+        }
+      })
+    )
+    .pipe(gulp.dest(config.html.dist));
   done();
 });
+
 
 gulp.task('images', done => {
   gulp

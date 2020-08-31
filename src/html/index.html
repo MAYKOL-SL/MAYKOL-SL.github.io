@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Adalab Web Starter Kit</title>
+    <title>Mayk Web Starter Kit</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./assets/css/main.css" />
     <link rel="icon" href="./assets/images/music.png" />
@@ -11,21 +11,13 @@
 
   <body>
     <div class="page">
-      <include src="./partials/header.html" title="Bienvenidos a Music"></include>
-      <include src="./partials/main.html"></include>
-      <include
-        src="./partials/link.html"
-        aClass="link__music"
-        text="Music"
-        url="#"
-      ></include>
-      <include
-        src="./partials/link.html"
-        aClass="link__github"
-        text="GitHub"
-        url="https://github.com"
-      ></include>
-      <include src="./partials/footer.html"></include>
+      <partial src="header.html" title="Bienvenidos a Music"></partial>
+      
+      <partial src="link.html"></partial>
+
+      <partial src="main.html"></partial>           
+
+      <partial src="footer.html"></partial>
     </div>
     <script src="./assets/js/main.js"></script>
   </body>

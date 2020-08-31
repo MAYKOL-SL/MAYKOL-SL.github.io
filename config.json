@@ -22,6 +22,11 @@
     "dest": "public/",
     "dist": "docs/"
   },
+  "html_partials": {
+    "src": "src/html/*.html",
+    "base": "src/html/partials/",
+    "dest": "docs/"
+  },
   "js": {
     "src": [
       "src/js/**/*.js"
