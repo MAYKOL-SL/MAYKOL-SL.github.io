@@ -4,7 +4,8 @@
   "description": "pages web",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "./node_modules/.bin/gulp",
+    "docs": "rm -rf docs && ./node_modules/.bin/gulp docs"
   },
   "repository": {
     "type": "git",
