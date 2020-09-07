@@ -1,24 +1,131 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Mayk Web Starter Kit</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="./assets/css/main.css" />
-    <link rel="icon" href="./assets/images/music.png" />
-  </head>
 
-  <body>
-    <div class="page">
-      <partial src="header.html" title="Bienvenidos a Music"></partial>
-      
-      <partial src="link.html"></partial>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Mayk Web Starter Kit</title>
 
-      <partial src="main.html"></partial>           
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
-      <partial src="footer.html"></partial>
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/main.css" />
+  <link rel="icon" href="../assets/images/music-icon.png" />
+
+</head>
+
+<body>
+  <div class="page">
+    <!-- Page Content goes here -->
+
+    <div class="carousel carousel-slider center ms-ui-carousel">
+      <div class="carousel-fixed-item center">
+        <div class="row">
+          <div class="col s12 m4 offset-m4 l4 offset-l4">
+            <a class="waves-effect 
+                      waves-light
+                      btn ms-gradient-45deg-purple
+                      width-100 
+                      border-radius-5">I'M A NEW USER
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s12 m4 offset-m4 l4 offset-l4">
+            <a class="waves-effect
+                      waves-light
+                      btn ms-gradient-45deg-purple ms-ui-btn__text 
+                      width-100 
+                      border-radius-5">I have an account <strong>ENTER</strong>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item" href="#one!">
+        <div class="row">
+          <img class="mt-6 width-px-60" src="../assets/images/play-icon.svg" alt="play-icon">
+        </div>
+        <div class="row">
+          <div class="col s10 offset-s1
+                      m6 offset-m3 
+                      l6 offset-l3 
+                      border-radius-10 
+                      ms-ui-carousel__content-text">
+            <h2 class="white-text 
+                       ms-ui-carousel__title">TRACKS</h2>
+            <p class="grey-text text-lighten-2
+                      ms-ui-carousel__sub-title">Millions tracks</p>
+            <div class="ms-ui-carousel__img1 ms-ui-carousel__img-position"></div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item white-text" href="#two!">
+        <div class="row">
+          <img class="mt-6 width-px-60" src="../assets/images/play-icon.svg" alt="play-icon">
+        </div>
+        <div class="row">
+          <div class="col s10 offset-s1
+                      m6 offset-m3 
+                      l6 offset-l3 
+                      border-radius-10 
+                      ms-ui-carousel__content-text">
+            <h2 class="white-text 
+                       ms-ui-carousel__title">PLAYLIST</h2>
+            <p class="grey-text text-lighten-2
+                      ms-ui-carousel__sub-title">Playlist for any mood</p>
+            <div class="ms-ui-carousel__img2 ms-ui-carousel__img-position"></div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item white-text" href="#three!">
+        <div class="row">
+          <img class="mt-6 width-px-60" src="../assets/images/play-icon.svg" alt="play-icon">
+        </div>
+        <div class="row">
+          <div class="col s10 offset-s1
+                      m6 offset-m3 
+                      l6 offset-l3 
+                      border-radius-10 
+                      ms-ui-carousel__content-text">
+            <h2 class="white-text 
+                       ms-ui-carousel__title">NEW MUSIC</h2>
+            <p class="grey-text text-lighten-2
+                      ms-ui-carousel__sub-title">New music every day</p>
+            <div class="ms-ui-carousel__img3 ms-ui-carousel__img-position"></div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item white-text" href="#four!">
+        <div class="row">
+          <img class="mt-6 width-px-60" src="../assets/images/play-icon.svg" alt="play-icon">
+        </div>
+        <div class="row">
+          <div class="col s10 offset-s1
+                      m6 offset-m3 
+                      l6 offset-l3 
+                      border-radius-10 
+                      ms-ui-carousel__content-text">
+            <h2 class="white-text 
+                       ms-ui-carousel__title">ARTISTS</h2>
+            <p class="grey-text text-lighten-2
+                      ms-ui-carousel__sub-title">List artists</p>
+            <div class="ms-ui-carousel__img4 ms-ui-carousel__img-position"></div>
+          </div>
+        </div>
+      </div>
     </div>
-    <script src="./assets/js/main.js"></script>
-  </body>
+
+  </div>
+
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.4.1.min.220afd743d.js?site=5ede0ece73d6ee50c62f7272"
+    type="text/javascript" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="./assets/js/main.js"></script>
+</body>
+
 </html>

@@ -1,0 +1,120 @@
+.ms-ui-carousel {
+  height: 100vh !important;
+
+  &__content-text {
+    // margin-top: 302px;
+    background: #015a60ab;
+  }
+
+  &__img-position {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -100;
+  }
+
+  &__title {
+    @include ms-font-size(2.2rem);
+  }
+
+  &__sub-title {
+    @include ms-font-size(1.7rem);
+  }
+
+  &__img1 {
+    background-image: url("../images/music-phone-1.png");
+    @include option-background();
+  }
+
+  &__img2 {
+    background-image: url("../images/music-phone-2.jpg");
+  }
+
+  &__img3 {
+    background-image: url("../images/woman-disk-phone-3.png");
+    @include option-background();
+  }
+
+  &__img4 {
+    background-image: url("../images/woman-music-phone-4.png");
+    @include option-background();
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .ms-ui-carousel {
+    &__content-text {
+      // margin-top: 345px;
+    }
+  }
+}
+
+// @media (min-width: 481px) and (max-width: 767px) {
+//     .ms-ui-carousel {}
+// }
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .ms-ui-carousel {
+    &__content-text {
+      // margin-top: 295px;
+    }
+
+    &__img1 {
+      background-image: url("../images/misic-desktop-1.png");
+      @include option-background();
+    }
+
+    &__img2 {
+      background-image: url("../images/music-desk-2.png");
+      @include option-background();
+    }
+
+    &__img3 {
+      background-image: url("../images/woman-disk-desk-3.jpg");
+      @include option-background();
+    }
+
+    &__img4 {
+      background-image: url("../images/woman-music-desk-4.png");
+      @include option-background();
+    }
+  }
+}
+
+// @media (min-width: 768px) and (max-width: 1024px) {
+//     .ms-ui-carousel {}
+// }
+
+// @media (min-width: 1025px) and (max-width: 1280px) {
+//     .ms-ui-carousel {}
+// }
+
+@media (min-width: 1281px) {
+  .ms-ui-carousel {
+    &__content-text {
+      // margin-top: 477px;
+    }
+
+    &__img1 {
+      background-image: url("../images/misic-desktop-1.png");
+      @include option-background();
+    }
+
+    &__img2 {
+      background-image: url("../images/music-desk-2.png");
+      @include option-background();
+    }
+
+    &__img3 {
+      background-image: url("../images/woman-disk-desk-3.jpg");
+      @include option-background();
+    }
+
+    &__img4 {
+      background-image: url("../images/woman-music-desk-4.png");
+      @include option-background();
+    }
+  }
+}

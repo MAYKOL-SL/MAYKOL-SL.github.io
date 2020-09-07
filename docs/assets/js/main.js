@@ -1,1 +1,1 @@
-"use strict";console.log(">> Ready :)");
+"use strict";$(document).ready(()=>{$(".carousel").carousel({dist:0,padding:0,fullWidth:!0,indicators:!0,duration:100})}),console.log(">> Ready :)");

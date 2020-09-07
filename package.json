@@ -4,7 +4,7 @@
   "description": "pages web",
   "main": "index.js",
   "scripts": {
-    "start": "./node_modules/.bin/gulp",
+    "start": "rm -rf public && ./node_modules/.bin/gulp",
     "docs": "rm -rf docs && ./node_modules/.bin/gulp docs"
   },
   "repository": {
