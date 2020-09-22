@@ -1,5 +1,13 @@
-.page__header {
+.ms-header {
   display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 3rem;
+
+  &__title {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    h1 {
+      @include ms-title(1.8rem, 2);
+    }
+  }
 }

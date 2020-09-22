@@ -1,35 +1,42 @@
 @mixin absoluteCentered() {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .container {
-    position: relative;
+  position: relative;
 }
 
 .content {
-    @include absoluteCentered();
+  @include absoluteCentered();
 }
 
-@mixin t($fontSize, $lineHeight) {
-    font-size: $fontSize;
-    line-height: $lineHeight;
-}
-.main__title {
-    @include t(32px, 40px);
-}
-.main__content p{
-    @include t(18px, 24px);
+@mixin ms-title($fontSize, $lineHeight) {
+  font-size: $fontSize !important;
+  line-height: $lineHeight !important;
 }
 
 //mixin font size
 @mixin ms-font-size($fontSize) {
-    font-size: $fontSize !important;    
+  font-size: $fontSize !important;
 }
 
 @mixin option-background() {
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+//mixin border radious
+@mixin ms-border-radius($border) {
+  border-radius: $border !important;
+}
+
+//mixin for select color list
+
+@mixin ms-color() {
+  $res: color("ms-blue", "darken-6");
+  background-color: $res !important;
+  
 }

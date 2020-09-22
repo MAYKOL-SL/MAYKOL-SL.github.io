@@ -20,59 +20,59 @@
 .sh-ui-gradient-45deg-light-blue-cyan {
   @include linear-gradient(
     45deg,
-    color("light-blue", "darken-2") 0%,
-    color("cyan", "lighten-1") 100%
+    color("ms-light-blue", "darken-2") 0%,
+    color("ms-cyan", "lighten-1") 100%
   );
   &.gradient-shadow {
-    box-shadow: 0 6px 20px 0 rgba(color("cyan", "lighten-1"), 0.5);
+    box-shadow: 0 6px 20px 0 rgba(color("ms-cyan", "lighten-1"), 0.5);
   }
 }
 
 .ms-ui-gradient-45deg-red-pink {
-  @include linear-gradient(45deg, color("red", "accent-2") 0%, color("pink", "lighten-3") 100%);
+  @include linear-gradient(45deg, color("ms-red", "accent-2") 0%, color("ms-pink", "lighten-3") 100%);
   &.gradient-shadow{
-    box-shadow: 0 6px 20px 0 rgba(color("pink", "lighten-3"),0.5);
+    box-shadow: 0 6px 20px 0 rgba(color("ms-pink", "lighten-3"),0.5);
   }
 }
 
 .ms-ui-gradient-45deg-amber-amber {
-  @include linear-gradient(45deg, color("amber", "darken-4") 0%, color("amber", "lighten-1") 100%);
+  @include linear-gradient(45deg, color("ms-amber", "darken-4") 0%, color("ms-amber", "lighten-1") 100%);
   &.gradient-shadow{
-    box-shadow: 0 6px 20px 0 rgba(color("amber", "darken-4"),0.3);
+    box-shadow: 0 6px 20px 0 rgba(color("ms-amber", "darken-4"),0.3);
   }
 }
 
 .ms-ui-gradient-45deg-green-teal {
-  @include linear-gradient(45deg, color("green" , "darken-1") 0%, color("teal", "accent-3") 100%);
+  @include linear-gradient(45deg, color("ms-green" , "darken-1") 0%, color("ms-teal", "accent-3") 100%);
   &.gradient-shadow{
-    box-shadow: 0 6px 20px 0 rgba(color("teal", "lighten-2"),0.5);
+    box-shadow: 0 6px 20px 0 rgba(color("ms-teal", "lighten-2"),0.5);
   }
 }
 
 .ms-ui-gradient-45deg-blue-indigo {
-  @include linear-gradient(45deg, color("blue" , "accent-4") 0%, color("indigo", "darken-1") 100%);  
+  @include linear-gradient(45deg, color("ms-blue" , "accent-4") 0%, color("ms-indigo", "darken-1") 100%);  
   &.gradient-shadow{
-    box-shadow: 0 6px 20px 0 rgba(color("indigo", "darken-1"),0.5);
+    box-shadow: 0 6px 20px 0 rgba(color("ms-indigo", "darken-1"),0.5);
   }
 }
 
 .ms-ui-gradient-45deg-deep-purple-blue {
-  @include linear-gradient(45deg, color("deep-purple" , "accent-4") 0%, color("blue", "darken-2") 100%);
+  @include linear-gradient(45deg, color("ms-deep-purple" , "accent-4") 0%, color("ms-blue", "darken-2") 100%);
   &.gradient-shadow{
-    box-shadow: 0 6px 20px 0 rgba(color("blue", "darken-2"),0.5);
+    box-shadow: 0 6px 20px 0 rgba(color("ms-blue", "darken-2"),0.5);
   }
 }
 
 .ms-ui-gradient-45deg-blue-indigo-transparent {
-  @include linear-gradient(45deg, color("blue" , "accent-5") 0%, color("indigo", "darken-1") 100%);  
+  @include linear-gradient(45deg, color("ms-blue" , "accent-5") 0%, color("ms-indigo", "darken-1") 100%);  
   &.gradient-shadow{
-    box-shadow: 0 6px 20px 0 rgba(color("indigo", "darken-1"),0.5);    
+    box-shadow: 0 6px 20px 0 rgba(color("ms-indigo", "darken-1"),0.5);    
   }
 }
 
 .ms-gradient-45deg-purple {
-  @include linear-gradient(45deg, color("purple" , "darken-3") 0%, color("pink", "accent-2") 100%);  
+  @include linear-gradient(45deg, color("ms-purple" , "darken-3") 0%, color("ms-pink", "accent-2") 100%);  
   &.gradient-shadow{
-    box-shadow: 0 6px 20px 0 rgba(color("indigo", "darken-1"),0.5);    
+    box-shadow: 0 6px 20px 0 rgba(color("ms-indigo", "darken-1"),0.5);    
   }
 }

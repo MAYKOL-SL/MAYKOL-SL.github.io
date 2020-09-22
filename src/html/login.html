@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Mayk Web Starter Kit</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <link rel="icon" href="../assets/images/music-icon.png" />
+
+</head>
+
+<body class="ms-blue darken-6">
+    <div class="ms-page">
+        <partial src="header.html" text="LOGIN" link="../" icon="navigate_before"></partial>
+        <!-- Page Content goes here -->
+
+
+        <div class="row">
+            <div class="col s12 m6 offset-m3 l4 offset-l4">
+                <div class="card 
+                            mt-7
+                            ms-blue darken-5                                                        
+                            ms-login">
+                    <section class="card-content">
+                        <div class="row">
+                            <div class="ms-login__icon">
+                                <img class="mt-6 width-px-60" src="../assets/images/play-icon.svg" alt="play-icon">
+                            </div>
+                        </div>
+                        <form action="">
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <i class="ms-white-text material-icons prefix">person</i>
+                                    <input id="user" type="text" class="validate ms-white-text">
+                                    <label for="user">Name</label>
+                                    <!-- <span class="helper-text" data-error="wrong" data-success="right">Helper text</span> -->
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <i class="ms-white-text material-icons prefix">lock_outline</i>
+                                    <input id="password" type="password" class="validate ms-white-text">
+                                    <label for="password">Password</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <span class="ml-5 fz-8 ms-white-text">Forgotten password ?</span>
+                            </div>
+                            <div class="row mb-10 pb-10">
+                                <div class="switch">
+                                    <label class="ms-white-text fz-9 font-weight-600">
+                                        <input type="checkbox">
+                                        <span class="lever"></span>
+                                        Remember me?
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col s12">
+                                    <button class="btn 
+                                               waves-effect 
+                                               waves-light
+                                               ms-gradient-45deg-purple
+                                               width-100 
+                                               border-radius-5" type="submit" name="action">Login
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+
+                        <div class="ms-login__line">
+                            <div class="ms-login__hr"></div>
+                            <p class="ms-white-text">or</p>
+                            <div class="ms-login__hr"></div>
+                        </div>
+
+                        <div class="ms-login__social">
+                            <a href="#" class="ms-login__link 
+                                               ms-white
+                                               black-text
+                                               border-radius-5">
+                                <img class="mr-6 width-px-20" src="../assets/images/google.svg" alt="google-icon">Google
+                            </a>
+
+                            <a href="#" class="ms-login__link 
+                                                   ms-white-text
+                                                   ms-blue accent-5
+                                                   border-radius-5">
+                                <img class="mr-6 width-px-20" src="../assets/images/facebook.svg" alt="facebook-icon">
+                                Facebook
+                            </a>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- Compiled and minified JavaScript -->
+    <partial src="page-script.html"></partial>
+</body>
+
+</html>

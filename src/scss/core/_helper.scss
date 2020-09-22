@@ -137,3 +137,12 @@ $mh: 100px !important, 150px !important, 200px !important, 250px !important, 300
     min-height: nth($mh, $i);
   }
 }
+
+/* Padding Bottom */
+$fz: fz-1, fz-2, fz-3, fz-4, fz-5, fz-6, fz-7, fz-8, fz-9, fz-10;
+$font-size: 0.1rem !important, 0.2rem !important, 0.3rem !important, 0.4rem !important, 0.5rem !important, 0.6rem !important, 0.7rem !important, 0.8rem !important, 0.9rem !important, 1rem !important;
+@for $i from 1 through 10 {
+  .#{ nth($fz, $i)}{
+    font-size: nth($font-size, $i);
+  }
+}

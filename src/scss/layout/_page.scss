@@ -1,7 +1,9 @@
 body {
   padding: 0rem;
   height: 100vh;
-  background: url("../images/logo-adalab.png") center center no-repeat
-    $color-white;
   font-family: $font-main;
+}
+
+.ms-page {
+  height: 100%;
 }
